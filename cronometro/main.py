@@ -115,7 +115,6 @@ class Cronometro:
             self.timer_id = self.janela.after(1000, self.atualizar_tempo)
 
     def iniciar(self):
-        # CORRIGIDO: usa self.rodando em vez de self.btn.rodando
         if not self.rodando:
             self.rodando = True
             self.atualizar_tempo()
