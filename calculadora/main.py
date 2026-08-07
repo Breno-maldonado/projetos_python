@@ -2,14 +2,15 @@ from tkinter import *
 from tkinter import ttk
 
 cor1 = "#2e2e2e"
-cor2 = "#feffff"
-cor3 = "#5f696f"
-cor4 = "#D9D9D9"
+cor2 = "#ffffff"
+cor3 = "#3f6969"
+cor4 = "#D4D4D4"
 cor5 = "#FFAB40"
 
 janela = Tk()
 janela.title("Calculadora Python")
 janela.geometry("400x500")
+janela.resizable(False, False)
 janela.config(bg=cor1)
 
 # Frames
@@ -27,6 +28,23 @@ frame_corpo = Frame(
     height=450
 )
 frame_corpo.grid(row=1, column=0)
+
+# Label
+app_label = Label(
+    frame_tela,
+    text="123456789",
+    width=15,
+    height=2,
+    padx=5,
+    relief=FLAT,
+    anchor="e",
+    justify=RIGHT,
+    font=("Ivy 32 bold"),
+    bg=cor3,
+    fg=cor2
+)
+app_label.place(x=0,y=0)
+
  
 # Botoes C % /
 b_1 = Button(frame_corpo, text="C", width=18, height=3, bg=cor4, bd=1, font=("Ivy 13 bold"), relief=SOLID, overrelief=RIDGE)
