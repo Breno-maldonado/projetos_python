@@ -43,11 +43,14 @@ def entrar_valores(event):
 
 # funcao calculo
 def calcular():
+    global todos_valores
     resultado = eval(todos_valores)
-    print(resultado)
+
+    valor_texto.set(str(resultado))
 
 # funcao limpar tela
 def limpar_tela():
+    global todos_valores
     todos_valores=""
     valor_texto.set("")
 
