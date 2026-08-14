@@ -15,8 +15,8 @@ Uma aplicação desktop simples, moderna e funcional de cronômetro desenvolvida
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **[Python 3] — Linguagem principal do projeto.
-- **[Tkinter] — Biblioteca nativa do Python para construção de interfaces gráficas (GUI).
+- **[Python 3]** — Linguagem principal do projeto.
+- **[Tkinter]** — Biblioteca nativa do Python para construção de interfaces gráficas (GUI).
 
 ---
 
