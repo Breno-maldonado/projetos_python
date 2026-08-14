@@ -15,8 +15,8 @@ Uma aplicação desktop de calculadora funcional e estilizada, desenvolvida em P
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **[Python 3] — Linguagem de programação principal.
-- **[Tkinter] — Biblioteca nativa do Python para criação da interface gráfica (GUI).
+- **[Python 3]** — Linguagem de programação principal.
+- **[Tkinter]** — Biblioteca nativa do Python para criação da interface gráfica (GUI).
 
 ---
 
