@@ -44,7 +44,9 @@ def calcular():
     meses = relativedelta(data_inicial, data_nascimento).months
     dias = relativedelta(data_inicial, data_nascimento).days
 
-    print(anos, meses, dias)
+    label_ano['text'] = anos
+    label_mes['text'] = meses
+    label_dia['text'] = dias
 
 # Label frames de baixo
 label_data_inicial = Label(frame_baixo, text='Data hoje', height=1, padx=0, pady=0, anchor=NW, bg=cor2, fg=cor3, font=("Ivy 11 bold"))
@@ -60,23 +62,23 @@ cal_2 = DateEntry(frame_baixo, width=25, bg='darkblue', fg=cor3, borderwith=2, d
 cal_2.place(x=200, y=90)
 
 # Label ano, mes e dia
-label_ano = Label(frame_baixo, text='00', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_ano.place(x=80, y=180)
+label_ano = Label(frame_baixo, text='--', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_ano.place(x=80, y=220)
 label_ano_nome = Label(frame_baixo, text='Anos', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
 label_ano_nome.place(x=80, y=280)
 
-label_mes = Label(frame_baixo, text='00', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_mes.place(x=180, y=180)
+label_mes = Label(frame_baixo, text='--', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_mes.place(x=180, y=220)
 label_mes_nome = Label(frame_baixo, text='Meses', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
 label_mes_nome.place(x=175, y=280)
 
-label_dia = Label(frame_baixo, text='00', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_dia.place(x=280, y=180)
+label_dia = Label(frame_baixo, text='--', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_dia.place(x=280, y=220)
 label_dia_nome = Label(frame_baixo, text='Dias', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
 label_dia_nome.place(x=282, y=280)
 
 # Botão calcular
 b_calcular = Button(frame_baixo, command=calcular ,text='CALCULAR', width=20, height=1, bg=cor4, fg=cor1, font=("Arial 12 bold"), relief=SOLID, overrelief=RIDGE)
-b_calcular.place(x=99, y=130)
+b_calcular.place(x=99, y=150)
 
 janela.mainloop()
