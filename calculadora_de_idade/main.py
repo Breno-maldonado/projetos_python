@@ -39,4 +39,20 @@ label_data_nascimento.place(x=25, y=90)
 cal_2 = DateEntry(frame_baixo, width=25, bg='darkblue', fg=cor3, borderwith=2, date_patter='DD/mm/yyyy', y=2026)
 cal_2.place(x=200, y=90)
 
+# Label ano, mes e dia
+label_ano = Label(frame_baixo, text='23', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_ano.place(x=80, y=160)
+label_ano_nome = Label(frame_baixo, text='Anos', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
+label_ano_nome.place(x=80, y=250)
+
+label_mes = Label(frame_baixo, text='08', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_mes.place(x=180, y=160)
+label_mes_nome = Label(frame_baixo, text='Meses', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
+label_mes_nome.place(x=175, y=250)
+
+label_dia = Label(frame_baixo, text='12', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
+label_dia.place(x=280, y=160)
+label_dia_nome = Label(frame_baixo, text='Dias', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
+label_dia_nome.place(x=282, y=250)
+
 janela.mainloop()
