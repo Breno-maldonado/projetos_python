@@ -26,6 +26,13 @@ label_calculadora.place(relx=0.5, y=60, anchor=CENTER)
 label_idade = Label(frame_cima, text='DE IDADE', width=25, height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor4, font=("Arial 38 bold"))
 label_idade.place(relx=0.5, y=110, anchor=CENTER)
 
+# Calculo de idade
+def calcular():
+    inicial = cal_1.get()
+    termino = cal_2.get()
+
+    print(inicial, termino)
+
 # Label frames de baixo
 label_data_inicial = Label(frame_baixo, text='Data inicial', height=1, padx=0, pady=0, anchor=NW, bg=cor2, fg=cor3, font=("Ivy 11 bold"))
 label_data_inicial.place(x=25, y=30)
@@ -41,18 +48,22 @@ cal_2.place(x=200, y=90)
 
 # Label ano, mes e dia
 label_ano = Label(frame_baixo, text='23', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_ano.place(x=80, y=160)
+label_ano.place(x=80, y=180)
 label_ano_nome = Label(frame_baixo, text='Anos', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
-label_ano_nome.place(x=80, y=250)
+label_ano_nome.place(x=80, y=280)
 
 label_mes = Label(frame_baixo, text='08', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_mes.place(x=180, y=160)
+label_mes.place(x=180, y=180)
 label_mes_nome = Label(frame_baixo, text='Meses', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
-label_mes_nome.place(x=175, y=250)
+label_mes_nome.place(x=175, y=280)
 
 label_dia = Label(frame_baixo, text='12', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 25 bold"))
-label_dia.place(x=280, y=160)
+label_dia.place(x=280, y=180)
 label_dia_nome = Label(frame_baixo, text='Dias', height=1, padx=3, anchor=CENTER, bg=cor1, fg=cor3, font=("Ivy 11 bold"))
-label_dia_nome.place(x=282, y=250)
+label_dia_nome.place(x=282, y=280)
+
+# Botão calcular
+b_calcular = Button(frame_baixo, text='CALCULAR', width=20, height=1, bg=cor4, fg=cor1, font=("Arial 12 bold"), relief=SOLID, overrelief=RIDGE)
+b_calcular.place(x=99, y=130)
 
 janela.mainloop()
