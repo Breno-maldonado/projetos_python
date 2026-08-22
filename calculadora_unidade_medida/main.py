@@ -35,7 +35,7 @@ l_app_nome = Label(frame_cima, text='CALCULADORA DE UNIDADES DE MEDIDAS', height
 l_app_nome.place(x=10, y=20)
 
 # Config frame esquerda
-img_0 = Image.open('image/icons8-balança-50.png')
+img_0 = Image.open('images/icons8-balança-50.png')
 img_0 = img_0.resize((40, 40), Image.Resampling.LANCZOS)
 img_0 = ImageTk.PhotoImage(img_0)
 b_0 = Button(frame_esquerda, text='PESO', image=img_0, compound=TOP, width=130, height=50, relief=FLAT, overrelief=SOLID, anchor=CENTER, font=('Ivy 10 bold'), fg=cor4, bg=cor2)
