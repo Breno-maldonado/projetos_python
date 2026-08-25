@@ -107,4 +107,8 @@ img_8 = ImageTk.PhotoImage(img_8)
 b_8 = Button(frame_esquerda, text='PRESSÃO', image=img_8, compound=TOP, relief=FLAT, overrelief=SOLID, anchor=CENTER, font=('Ivy 10 bold'), fg=cor4, bg=cor2)
 b_8.grid(row=2, column=2, sticky=NSEW, pady=5, padx=5)
 
+# Config frame direita
+l_unidade_nome = Label(frame_direita, text='UNIDADE',width=16, height=3, padx=0, relief=GROOVE, anchor=CENTER, font=('Ivy 18 bold'), fg=cor4, bg=cor2)
+l_unidade_nome.place(x=-4, y=-9)
+
 janela.mainloop()
