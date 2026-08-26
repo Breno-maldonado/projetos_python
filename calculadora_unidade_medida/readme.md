@@ -25,6 +25,6 @@ Uma aplicação desktop simples e intuitiva desenvolvida em Python e Tkinter par
 
 - **Python 3.x**
 - **Tkinter** (Interface gráfica padrão do Python)
-- **Pillow (PIL)** (Processamento e manipulação de imagens/ícones)
+- **Pillow (PIL)** (Processamento e manipulação de imagens/Icones)
 
 ---
