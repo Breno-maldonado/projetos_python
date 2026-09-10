@@ -26,13 +26,3 @@ Neste projeto foram aplicados conceitos fundamentais da programação:
 - **Condicionais Compostas:** Aplicação de operadores lógicos (`if/elif/else`, `or`) para validações.
 
 ---
-
-## 💻 Como Executar
-
-### Pré-requisitos
-- Ter o **Python 3.x** instalado em sua máquina.
-
-### Passo a passo
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
