@@ -20,5 +20,14 @@ df_limpo['tipo'] = df_limpo['tipo'].str.strip()
 # Remove as linhas com valor ou status nulos
 df_limpo = df_limpo.dropna(subset=['valor', 'status'])
 
+# Adiciona a coluna com o imposto
+df_limpo['valor_com_imposto'] = df_limpo['valor'] * 1.10
+
+# Filtra por apenas as concluídas
+vendas_concluidas = df_limpo[df_limpo['status'] == 'Concluída']
+
+# Agrupa pelo tipo e soma os impostos desse tipo
+relatorio = vendas_concluidas.groupby('tipo')['valor_com_imposto'].sum()
+
 print("Dados Tratados:")
-print(df_limpo)
+print(relatorio)
