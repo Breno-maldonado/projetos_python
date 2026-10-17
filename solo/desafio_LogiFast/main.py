@@ -20,4 +20,5 @@ df_fretes = pd.DataFrame(dados_fretes)
 
 df_unificado = pd.merge(df_pedidos, df_fretes, on='cidade', how='inner')
 
-print(df_unificado)
+resultado_frete = df_unificado.groupby('cidade')['custo_frete'].sum()
+print(resultado_frete)
