@@ -21,6 +21,8 @@ df_consumo = pd.DataFrame(dados_consumo)
 
 df_tabela = pd.merge(df_clientes, df_consumo, on='id_cliente', how='inner')
 
-df_agg = df_tabela.groupby(['id_cliente', 'nome', 'plano'])['horas_assistidas'].sum()
+df_agg = df_tabela.groupby(['id_cliente', 'nome', 'plano'])['horas_assistidas'].sum().reset_index()
 
-print(df_agg)
+df_ordenado = df_agg.sort_values(by='horas_assistidas', ascending=False)
+
+print(df_ordenado)
