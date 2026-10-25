@@ -8,7 +8,7 @@ Diferente dos projetos guiados, aqui o objetivo é colocar em prática os conhec
 
 O principal objetivo destes projetos é transformar conhecimento teórico em prática e desenvolver, gradualmente, minha capacidade de resolver problemas utilizando Python.
 
-Através deles, busco:
+Através deles busco:
 
 - Desenvolver minha lógica de programação;
 - Aplicar conceitos aprendidos anteriormente;
@@ -35,5 +35,3 @@ Este repositório representa uma etapa importante da minha evolução como progr
 Conforme novos conhecimentos são adquiridos, novos projetos serão desenvolvidos e projetos antigos poderão ser revisitados para aplicar conceitos e melhorias aprendidos posteriormente.
 
 > **Aqui, o objetivo não é mostrar projetos perfeitos, mas mostrar minha evolução em direção à autonomia como desenvolvedor.**
-
----
