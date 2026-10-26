@@ -1,0 +1,6 @@
+tabela = [
+    {'id': '1','nome':'Breno'},
+    {'id': '2','nome':'Olivia'},
+    {'id': '3','nome':'Ana'},
+    {'id': '1','nome':'Breno'}
+]
